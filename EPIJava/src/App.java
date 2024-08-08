@@ -21,6 +21,9 @@ public class App {
         Integer[] a = {4,6,1,2,3,5};
         Integer e = new FindKthElement<Integer>().findKthLargest(Arrays.asList(a), 1);
         System.out.println("element = " + e);
+        a = new Integer[]{3,2,4,3,3,4,1,5,1,2,3};
+        e = new FindKthElement<Integer>().findKthLargestNonDistinct(Arrays.asList(a), 8);
+        System.out.println("element = " + e);
     }
 
     private static void testMinMaxFind() {
