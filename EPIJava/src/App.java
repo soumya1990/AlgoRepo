@@ -1,6 +1,7 @@
 
 import java.util.Arrays;
 
+import hashing.AnonyousLetter;
 import hashing.PalindromePermutations;
 import searching.FindKthElement;
 import searching.FindMissingAndRepeated;
@@ -22,6 +23,7 @@ public class App {
 
     private static void testHashing() {
         testPalindromePermutations();
+        testAnonymousLetterFeasibility();
 
     }
 
@@ -29,6 +31,15 @@ public class App {
         String s = "aacbdef";
         boolean res = new PalindromePermutations().isAnagramPalindrome(s);
         System.out.println("anagram of s" + s + " can be a palindrome ? " + res);
+    }
+
+    private static void testAnonymousLetterFeasibility() {
+        String mag = "the nonkj kjfosdkf dhslkfsdk jnfdsljfkjs jldsjfklsdjf jnfjdslfksj kaljsjdfhsdkjwo";
+        String letter = "dhslkklsdjfhkasdfsfsasfdfsfsdfsdfdsfewvrfrf"; // "dhslkklsdjfhk"
+        boolean res = new AnonyousLetter().isAnonymousLetterFeasible(mag, letter);
+        System.out.println("Is anonymous letter feasible = " + res);
+        res = new AnonyousLetter().isAnonymousFeasible(letter, mag);
+        System.out.println("Is anonymous letter feasible = " + res);
     }
 
     private static void testKLargest() {
