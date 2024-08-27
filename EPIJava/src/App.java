@@ -1,6 +1,7 @@
 
 import java.util.Arrays;
 
+import hashing.PalindromePermutations;
 import searching.FindKthElement;
 import searching.FindMissingAndRepeated;
 import searching.MinMaxFind;
@@ -10,12 +11,24 @@ public class App {
     public static void main(String[] args) throws Exception {
         testSearching();
         testSorting();
+        testHashing();
     }
 
     private static void testSearching() {
         testMinMaxFind();
         testKLargest();
         testFindMissing();
+    }
+
+    private static void testHashing() {
+        testPalindromePermutations();
+
+    }
+
+    private static void testPalindromePermutations() {
+        String s = "aacbdef";
+        boolean res = new PalindromePermutations().isAnagramPalindrome(s);
+        System.out.println("anagram of s" + s + " can be a palindrome ? " + res);
     }
 
     private static void testKLargest() {

@@ -67,6 +67,7 @@ public class FindMissingAndRepeated {
         // System.out.println("mask = " + mask);
         // { 0, 1, 3, 2, 2 }
         // 0,1,2,3,4
+    
         int oneAns = 0;
         for (int i = 0; i < n; i++) {
             if ((arr[i] & mask) == mask) { // 11 & 10
