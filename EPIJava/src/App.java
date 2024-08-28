@@ -2,6 +2,7 @@
 import java.util.Arrays;
 
 import hashing.AnonyousLetter;
+import hashing.LRUCache;
 import hashing.PalindromePermutations;
 import searching.FindKthElement;
 import searching.FindMissingAndRepeated;
@@ -24,7 +25,21 @@ public class App {
     private static void testHashing() {
         testPalindromePermutations();
         testAnonymousLetterFeasibility();
+        testLRUCache();
+    }
 
+    private static void testLRUCache() {
+        LRUCache<Integer, Integer> cache = new LRUCache<>(3);
+        cache.get(1);
+        cache.insert(2, 10);
+        cache.insert(1, 9);
+        cache.insert(3, 8);
+        cache.insert(4, 7);
+        cache.insert(2, 9);
+        System.out.println(cache.get(1));
+        System.out.println(cache.get(2));
+        System.out.println(cache.get(3));
+        System.out.println(cache.get(4));
     }
 
     private static void testPalindromePermutations() {
