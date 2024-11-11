@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 import hashing.AnonyousLetter;
 import hashing.LRUCache;
+import hashing.LRUCacheCustom;
 import hashing.PalindromePermutations;
 import searching.FindKthElement;
 import searching.FindMissingAndRepeated;
@@ -40,6 +41,32 @@ public class App {
         System.out.println(cache.get(2));
         System.out.println(cache.get(3));
         System.out.println(cache.get(4));
+
+        LRUCacheCustom<Integer, Integer> customCache = new LRUCacheCustom<>(3);
+        // System.out.println(customCache.get(1));
+        // customCache.put(1, 10);
+        // System.out.println(customCache.get(1));
+        // customCache.put(1, 11);
+        // System.out.println(customCache.get(1));
+        // customCache.remove(1);
+        // System.out.println(customCache.get(1));
+
+        customCache.put(1, 10);
+        System.out.println(customCache.get(1));
+        customCache.put(2, 20);
+        System.out.println(customCache.get(2));
+        customCache.put(3, 30);
+        System.out.println(customCache.get(3));
+        customCache.put(4, 40);
+        System.out.println(customCache.get(4));
+        customCache.put(5, 50);
+        System.out.println(customCache.get(5));
+        System.out.println("--------");
+        System.out.println(customCache.get(1));
+        System.out.println(customCache.get(2));
+        System.out.println(customCache.get(3));
+        System.out.println(customCache.get(4));
+        System.out.println(customCache.get(5));
     }
 
     private static void testPalindromePermutations() {
