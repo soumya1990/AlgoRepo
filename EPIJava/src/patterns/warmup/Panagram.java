@@ -11,7 +11,6 @@ Note: The given sentence might contain other characters like digits or spaces, y
 package patterns.warmup;
 
 import java.util.HashSet;
-
 import java.util.Set;
 
 public class Panagram {
