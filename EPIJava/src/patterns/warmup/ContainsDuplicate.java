@@ -7,7 +7,7 @@
  * Approach 2: Sort and identify - TC = O(NlgN) Sc = based on sorting implementation- Arrays.sort() - O(lgN) quick sort variant
  */
 
-package patterns.twoptr;
+package patterns.warmup;
 
 import java.util.HashSet;
 import java.util.Set;
