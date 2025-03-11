@@ -1,4 +1,4 @@
-package patterns;
+package patterns.warmup;
 
 /**
  * Given an array of strings words and two different strings that already exist
