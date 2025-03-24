@@ -24,14 +24,16 @@ public class UniqueQardrupletTarget {
         return uniqueQs;
     }
 
-    private void findUniqueTriplets(int[] arr, int target, int curr, List<List<Integer>> uniqieQs, List<Integer> prevSelection) {
+    private void findUniqueTriplets(int[] arr, int target, int curr, List<List<Integer>> uniqieQs,
+            List<Integer> prevSelection) {
         List<Integer> currSelection;
-      for (int i= curr+1; i<arr.length-2; i++) {
-        if (i>0 && arr[i] == arr[i-1]) continue;
-        currSelection = new LinkedList<>(prevSelection);
-        currSelection.add(arr[i]);
-        findUniquePairs(arr, target-arr[i], i, uniqieQs,);
-      }
+        for (int i = curr + 1; i < arr.length - 2; i++) {
+            if (i > 0 && arr[i] == arr[i - 1])
+                continue;
+            currSelection = new LinkedList<>(prevSelection);
+            currSelection.add(arr[i]);
+            findUniquePairs(arr, target - arr[i], i, uniqieQs, prevSelection);
+        }
     }
 
     private void findUniquePairs(int[] arr, int target, int curr, List<List<Integer>> uniqueQs,
