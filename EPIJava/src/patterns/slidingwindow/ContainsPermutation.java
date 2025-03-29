@@ -42,7 +42,7 @@ public class ContainsPermutation {
                 return true;
             }
 
-            if (end - start + 1 > p.length()) {
+            if (end - start + 1 >= p.length()) {
                 Character fC = s.charAt(start);
                 if (patternKeys.contains(fC)) { // patternsKey is not needed if we do not remove any Key
                     patternMap.put(fC, patternMap.getOrDefault(fC, 0) + 1);// if frequency is 0 then matched--
