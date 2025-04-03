@@ -13,6 +13,7 @@ import java.util.*;
  * 1,2,3
  * [1,2,3]  
  *   
+ * TC = O(N^3)
  * 
  */
 public class SubArraysWithLessProduct {
