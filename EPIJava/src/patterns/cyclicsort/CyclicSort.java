@@ -1,4 +1,4 @@
-package cyclicsort;
+package patterns.cyclicsort;
 
 /*
  * We are given an array containing n objects. 

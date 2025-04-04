@@ -1,4 +1,4 @@
-package mergeintervals;
+package patterns.mergeintervals;
 
 import java.util.*;
 
