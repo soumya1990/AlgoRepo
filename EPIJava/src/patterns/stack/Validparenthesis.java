@@ -26,8 +26,6 @@ public class Validparenthesis {
 
         }
         return stack.isEmpty();
-        
-
     }
 
     private boolean isOpen(Character c) {
