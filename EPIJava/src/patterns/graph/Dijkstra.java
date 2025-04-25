@@ -21,7 +21,7 @@ Input: heights =
   [5,3,5]]
  * 
  */
-public class MinEffort {
+public class Dijkstra {
 
     class Edge {
         int to;
