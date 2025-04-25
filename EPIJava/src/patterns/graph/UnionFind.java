@@ -10,6 +10,7 @@ public class UnionFind {
         rank = new int[V];
         for (int i = 0; i < V; i++) {
             parent[i] = i;
+            rank[i] = 0;
         }
     }
 
@@ -39,10 +40,11 @@ public class UnionFind {
         int pv = findParent(v);
         if (rank[pu] < rank[pv]) {
             parent[pu] = parent[pv];
-            rank[pu]++;
+        } else if ( rank[pv] < rank[pu]) {
+            parent[pv] = parent[pu];
         } else {
             parent[pv] = parent[pu];
-            rank[pv]++;
+            rank[pu]++;
         }
     }
 
