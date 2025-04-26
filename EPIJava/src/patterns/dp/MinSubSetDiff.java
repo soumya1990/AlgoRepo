@@ -20,10 +20,11 @@ Output: 3
  *    {1, 2, 7, 1, 5} sum = 16
  * 16 14 10  0  0  0
  *     {1,  3,  100, 4}
- * 108 106 100  92   92
+ * 108 106 100  92  
  * */
 public class MinSubSetDiff {
 
+    // Clever Idea: Alternate solution: Find sum/2 - find largest sum where dp[s] = true
     public int minDiff(int[] nums) {
         int R= nums.length; // Do not calculate nums[nums.length] as it is calcualted as nums[0];
         int sum = 0;
@@ -43,3 +44,4 @@ public class MinSubSetDiff {
     }
     
 }
+
